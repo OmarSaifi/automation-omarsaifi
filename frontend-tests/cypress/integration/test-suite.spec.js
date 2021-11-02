@@ -13,6 +13,7 @@ describe('Test suite', function(){
         cy.contains('Tester Hotel Overview')
         cy.contains('Rooms')
         cy.get('.user > .btn').click()
+        cy.contains('Login')
     })
     
     // Test case 2 - Create a room
@@ -31,11 +32,11 @@ describe('Test suite', function(){
         cy.get(':nth-child(1) > select').select('Double')
         cy.contains('Category')
         cy.get(':nth-child(2) > input').type('1000')
-        cy.contains('Number')
+        //cy.contains('Number')
         cy.get(':nth-child(3) > input').type('80')
-        cy.contains('Floor')
+        //cy.contains('Floor')
         cy.get('.checkbox').click()
-        cy.contains('Available')
+        //cy.contains('Available')
         cy.get(':nth-child(5) > input').type('3790')
         cy.contains('Price')
         cy.get(':nth-child(6) > select').select('Sea View')
