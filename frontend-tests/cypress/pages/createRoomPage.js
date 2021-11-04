@@ -3,7 +3,6 @@
 
 // Elements
 const goToRoom = ':nth-child(1) > .btn'
-
 const createNewButton = 'h2 > .btn'
 const titleOfRoomPage = 'Testers Hotel'
 const assertRoom = 'New Room'
@@ -20,8 +19,9 @@ const featSeaView = 'Sea View'
 const featPenthouse = 'Penthouse'
 
 const saveButton = '.blue'
+const backButton = ':nth-child(3) > .btn'
 
-// input values
+// Input values
 const category = 'Double'
 const roomNumber = '1000'
 const floorNumber = '80'
@@ -41,25 +41,20 @@ function viewRoom(cy){
 }
 
 function createNewRoom(cy){
-cy.get(createNewButton).click()
-cy.get(categoryField).select(category)
-cy.get(numberField).type(roomNumber)
-cy.get(floorField).type(floorNumber)
-cy.get(availableBox).click()
-cy.get(priceField).type(price)
-cy.get(features).select(featSeaView)
-cy.get(saveButton).click()
-}
-
-
-function assertNewRoom(cy){
-cy.contains(assertRoom)
-cy.title().should('eq',assertRoom)
+    cy.get(createNewButton).click()
+    cy.get(categoryField).select(category)
+    cy.get(numberField).type(roomNumber)
+    cy.get(floorField).type(floorNumber)
+    cy.get(availableBox).click()
+    cy.get(priceField).type(price)
+    cy.get(features).select(featSeaView)
+    cy.get(saveButton).click()
+    cy.get('h2 > div').should("have.text", "Rooms")
+    cy.get(backButton).click()
 }
 
 // Exports
 module.exports = {
     viewRoom,
     createNewRoom,
-    assertNewRoom
 }

@@ -17,6 +17,7 @@ describe('Testsuite', function(){
         indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Rooms')
         //roomFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
     })
+
     afterEach(()=>{
         dashboardFuncs.performLogout(cy, 'Login')
     })
@@ -27,7 +28,6 @@ describe('Testsuite', function(){
         
         roomFuncs.viewRoom(cy)
         roomFuncs.createNewRoom(cy)
-        roomFuncs.assertNewRoom(cy)
     })
 
 })
