@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
 
+
 // Elements
 const titleOfDashboardPage = 'Testers Hotel'
 const logoutButton = '.user > .btn'
-
 
 // Actions / functions
 function checkTitleOfDashboardPage(cy){

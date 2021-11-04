@@ -1,14 +1,13 @@
 /// <reference types="cypress" />
 
+
 // Elements
 const titleOfIndexPage = 'Testers Hotel'
 const usernameTextfield = ':nth-child(1) > input'
 const passwordTextfield = ':nth-child(2) > input'
 const loginButton = '.btn'
 
-
 // actions / functions
-
 function checkTitleOfIndexPage(cy){
     cy.title().should('eq', titleOfIndexPage)
 }

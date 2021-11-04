@@ -52,5 +52,4 @@ describe('Test Suite', function(){
         reservationFuncs.createNewReservation(cy)
         dashboardFuncs.performLogout(cy, 'Login')
     })
-
 })

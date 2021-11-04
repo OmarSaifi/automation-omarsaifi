@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-04T16:48:22.999Z",
+    "end": "2021-11-04T16:48:34.081Z",
+    "duration": 11082,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1a29b04d-0eaf-4f58-9e79-6dc2db8774ab",
+      "title": "",
+      "fullFile": "cypress/integration/test-suite.spec.js",
+      "file": "cypress/integration/test-suite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f5fd818-28aa-41c4-9f07-450000f4dfe8",
+          "title": "Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test case 1",
+              "fullTitle": "Test suite test case 1",
+              "timedOut": null,
+              "duration": 2135,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000');\ncy.contains('Login');\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();\ncy.contains('Tester Hotel Overview');\ncy.contains('Rooms');\ncy.get('.user > .btn').click();\ncy.contains('Login');",
+              "err": {},
+              "uuid": "cf9bbc25-56b8-4116-b6aa-7dec55c10d1c",
+              "parentUUID": "8f5fd818-28aa-41c4-9f07-450000f4dfe8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 2",
+              "fullTitle": "Test suite test case 2",
+              "timedOut": null,
+              "duration": 3375,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000');\ncy.title().should('include', 'Hotel');\ncy.contains('Login');\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();\ncy.contains('Rooms');\ncy.get(':nth-child(1) > .btn').click();\ncy.contains('Rooms');\ncy.contains('Create Room');\ncy.get('h2 > .btn').click();\ncy.get(':nth-child(1) > select').select('Double');\ncy.contains('Category');\ncy.get(':nth-child(2) > input').type('1000');\ncy.get(':nth-child(3) > input').type('80');\ncy.get('.checkbox').click();\ncy.get(':nth-child(5) > input').type('3790');\ncy.get(':nth-child(6) > select').select('Sea View');\ncy.contains('Features (Hold Ctrl / ⌘ to select multiple)');\ncy.get('.blue').click();\ncy.contains('Floor 80, Room 1000');\ncy.get(':nth-child(3) > .btn').click();\ncy.title().should('include', 'Hotel');",
+              "err": {},
+              "uuid": "5e1112fb-cc4a-4805-ab6c-d3f72f05c9f3",
+              "parentUUID": "8f5fd818-28aa-41c4-9f07-450000f4dfe8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 3",
+              "fullTitle": "Test suite test case 3",
+              "timedOut": null,
+              "duration": 1610,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit('http://localhost:3000')\n//cy.title().should('include', 'Hotel')\n//cy.contains('Login')\n//cy.get(':nth-child(1) > input').type('tester01')\n//cy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c')\n//cy.get('.btn').click()\n//cy.contains('View')\ncy.get('.blocks > :nth-child(2) > .btn').click();\ncy.contains('Clients');\ncy.get('h2 > .btn').click();\ncy.contains('New Client');\ncy.get(':nth-child(1) > input').type('Omar Saifi');\ncy.contains('Name');\ncy.get(':nth-child(2) > input').type('omaralisaifi@hotmail.com');\ncy.contains('Email');\ncy.get(':nth-child(3) > input').type('0732365202');\ncy.contains('Telephone');\ncy.get('.blue').click();\ncy.contains('Clients');\ncy.get(':nth-child(3) > .btn').click();\ncy.title().should('include', 'Tester');",
+              "err": {},
+              "uuid": "e258e991-8d52-426d-bb95-480886011874",
+              "parentUUID": "8f5fd818-28aa-41c4-9f07-450000f4dfe8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 4",
+              "fullTitle": "Test suite test case 4",
+              "timedOut": null,
+              "duration": 1120,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit('http://localhost:3000')\n//cy.title().should('include', 'Hotel')\n//cy.contains('Login')\n//cy.get(':nth-child(1) > input').type('tester01')\n//cy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c')\n//cy.get('.btn').click()\n//cy.contains('Bills')\ncy.get(':nth-child(3) > .btn').click();\ncy.contains('Bills');\ncy.get('h2 > .btn').click();\ncy.contains('New Bill');\ncy.get('input').type('7995');\ncy.contains('Value (SEK)');\ncy.get('.checkbox').click();\ncy.contains('Paid');\ncy.get('.blue').click();\ncy.contains('Bills');\ncy.get(':nth-child(3) > .btn').click();\ncy.title().should('include', 'Tester');",
+              "err": {},
+              "uuid": "290eec49-4c18-40e7-99e5-e5e0c3ee57c2",
+              "parentUUID": "8f5fd818-28aa-41c4-9f07-450000f4dfe8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 5",
+              "fullTitle": "Test suite test case 5",
+              "timedOut": null,
+              "duration": 1591,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit('http://localhost:3000')\n//cy.title().should('include', 'Hotel')\n//cy.contains('Login')\n//cy.get(':nth-child(1) > input').type('tester01')\n//cy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c')\n//cy.get('.btn').click()\n//cy.contains('Reservations')\ncy.get(':nth-child(4) > .btn').click();\ncy.contains('Create Reservation');\ncy.get('h2 > .btn').click();\ncy.get(':nth-child(1) > input').type('2021-12-23');\ncy.contains('Start (Format YYYY-MM-DD)');\ncy.get(':nth-child(2) > input').type('2022-01-04');\ncy.contains('End (Format YYYY-MM-DD)');\ncy.get(':nth-child(3) > select').select('Mikael Eriksson (#2)');\ncy.contains('Client');\ncy.get(':nth-child(4) > select').select('Floor 1, Room 101');\ncy.contains('Room');\ncy.get(':nth-child(5) > select').select('ID: 1');\ncy.contains('Bill');\ncy.get('.blue').click();\ncy.contains('Reservations');\ncy.get(':nth-child(3) > .btn').click();\ncy.title().should('include', 'Hotel');",
+              "err": {},
+              "uuid": "7a835b5c-ae25-4bd8-a49b-e9d5a57b8a1e",
+              "parentUUID": "8f5fd818-28aa-41c4-9f07-450000f4dfe8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf9bbc25-56b8-4116-b6aa-7dec55c10d1c",
+            "5e1112fb-cc4a-4805-ab6c-d3f72f05c9f3",
+            "e258e991-8d52-426d-bb95-480886011874",
+            "290eec49-4c18-40e7-99e5-e5e0c3ee57c2",
+            "7a835b5c-ae25-4bd8-a49b-e9d5a57b8a1e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9831,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.0"
+    }
+  }
+}
