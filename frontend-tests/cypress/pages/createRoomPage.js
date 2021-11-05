@@ -40,7 +40,9 @@ function viewRoom(cy){
 }
 
 function createNewRoom(cy){
+    cy.get('h2').should("contain", "Rooms")
     cy.get(createNewButton).click()
+    cy.get('h2 > div').should("contain", "New Room")
     cy.get(categoryField).select(category)
     cy.get(numberField).type(roomNumber)
     cy.get(floorField).type(floorNumber)

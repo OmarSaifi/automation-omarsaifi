@@ -15,10 +15,11 @@ describe('Test Suite', function(){
     before(()=>{
         cy.visit(targets.base_url)
         indexFuncs.checkTitleOfIndexPage(cy)
+        //indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
     })
 
     afterEach(()=>{
-        
+        //dashboardFuncs.performLogout(cy, 'Login')
     })
     
     // Test case 1
@@ -32,22 +33,28 @@ describe('Test Suite', function(){
         indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
         roomFuncs.viewRoom(cy)
         roomFuncs.createNewRoom(cy)
+        dashboardFuncs.performLogout(cy, 'Login')
     })
 
     // Test case 3
     it('Test case 3 - Create a new Client', function(){
+        indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
         clientFuncs.viewClient(cy)
         clientFuncs.createNewClient(cy)
+        dashboardFuncs.performLogout(cy, 'Login')
     })
 
     // Test case 4
     it('Test case 4 - Create a new Bill', function(){
+        indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
         billFuncs.viewBill(cy)
         billFuncs.createNewBill(cy)
+        dashboardFuncs.performLogout(cy, 'Login')
     })
 
     // Test case 5
     it('Test case 5 - Create a new Reservation', function(){
+        indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
         reservationFuncs.viewReservation(cy)
         reservationFuncs.createNewReservation(cy)
         dashboardFuncs.performLogout(cy, 'Login')

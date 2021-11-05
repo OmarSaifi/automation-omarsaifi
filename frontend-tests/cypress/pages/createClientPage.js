@@ -2,7 +2,7 @@
 
 
 // Elements
-const goToClient = 'div.block:nth-child(2) > a:nth-child(3)'
+const goToClient ='div.block:nth-child(2) > a:nth-child(3)'
 const createnNewBtn = 'h2 > .btn'
 const nameField = ':nth-child(1) > input'
 const emailField = ':nth-child(2) > input'
