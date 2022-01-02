@@ -1,5 +1,5 @@
 module.exports = {
-    base_url: 'http://localhost:3000',
-    username: 'tester01',
-    password: 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c'
+    base_url: 'https://www.netflix.com/se/login"',
+    username: 'asim_164@hotmail.com',
+    password: 'TeenBandar2022?!'
 }
